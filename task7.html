@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task7</title>
+    <style>
+#button{
+    position: fixed;
+    top: 40px;
+}
+    </style>
+</head>
+<body>
+    <p id="paragraph">This is a paragraph of text.</p>
+    <button id="button">Hide</button>
+    <script>
+    
+    const paragraph = document.getElementById('paragraph');
+    const button = document.getElementById('button');
+    button.addEventListener('click', function() {
+        if (paragraph.style.display === 'none') {
+            paragraph.style.display = 'block';
+            button.textContent = 'Hide';
+        } else {
+            paragraph.style.display = 'none';
+            button.textContent = 'Show';
+        }
+    });
+    </script>
+</body>
+</html>
